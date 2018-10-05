@@ -31,6 +31,16 @@
       </div>
     </div>
 
+    <div class="form-row">
+      <div class="col-lg-12">
+        <div class="form-group">
+          <%= form.label  :description %>
+          <%= form.hidden_field :description %>
+          <trix-editor input="house_description"></trix-editor>
+        </div>
+      </div>
+    </div>
+
     <%= form.fields_for :address do |address|  %>
     <div class="form-group">
       <%= address.label      :address_1 %>
